@@ -74,12 +74,73 @@ li {
 /* 
     Border styling 
     width 5px style is solid and border color
-
-
 */
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+}
 
+/* example of a css pusdo class 
+    essentially the ask is to make the first element of each list
+    bold 
+*/
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+/* means every second child of a list will be red */
+/* li:nth-child(2){
+    color: red;
+} */
+/* means every odd numbered  child of the list will be red */
+/* li:nth-child(odd){
+    color: red;
+} */
+
+/* first paragraph of article */
+article p:last-child {
+  color: red;
+}
+
+/* Styling hyper links LVHA - link-visited-hover-active */
+/* it is not good practice to style a tags by them selves it is better to style a sudo class 
+which is good for us because it will allow us to style diffrent states 
+*/
+/* this means style all anchor tags with a link attribute */
+/* text-decoration means to get rid of the underline  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+/* visited is the state after the user has clicked on the clink  */
+a:visited {
+  color: #1098ad;
+}
+/* hover is the state while a cursor is moving around it  */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+/* active is when a user is clicking on the hover */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* resolving conflict */
+#copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer {
+  color: green;
 }
