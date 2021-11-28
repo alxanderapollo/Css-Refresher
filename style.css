@@ -1,13 +1,40 @@
+/* universal selector selects all elements on the page - has the lowest priority */
+*{
+
+}
+
 /* combining and Selecting mutlple tags that have the same styling  */
-h1,
+/* body is passing down these styles to all the child elements in program */
+body {
+    font-family: sans-serif;
+    color: #444;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* short hand starts with top and bot and left and right. 20 px for top and bottom - 40ox for left and right */
+  padding: 20px 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+}
+/* 
+    Border styling 
+    width 5px style is solid and border color
+*/
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+
+/* h1,
 h2,
 h3,
 h4,
 p,
 li {
-  font-family: sans-serif;
-  color: #444;
-}
+}  */
 
 h1,
 h2,
@@ -67,18 +94,6 @@ li {
 }
 .related {
   list-style: none;
-}
-.main-header {
-  background-color: #f7f7f7;
-}
-/* 
-    Border styling 
-    width 5px style is solid and border color
-*/
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* example of a css pusdo class 
@@ -141,6 +156,12 @@ a:active {
 .text {
   color: yellow;
 }
-footer {
+footer p {
   color: green;
+}
+
+
+/* Nave styling */
+nav{
+    font-size:18px;
 }
