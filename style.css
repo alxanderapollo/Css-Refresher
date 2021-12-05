@@ -234,7 +234,7 @@ button {
   font-size: 22px;
   padding: 20px;
   cursor: pointer;
-
+  /* with postion absolute it must be postioned either top left bottom or right */
   position: absolute;
   /* top: 50px;
   left: 50px; */
@@ -242,6 +242,7 @@ button {
   right: 50px;
 }
 
+/* PSUEDO classes start with double colon  styles the very first letter of the class - psuedo  */
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
@@ -267,4 +268,10 @@ h2::before {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+/* Floats */
+.author-img{
+  /* takes the image out of the page flow  and now floats around  */
+  float: left;
 }
